@@ -1,4 +1,4 @@
-docker-dd-trace-agent
+dd-trace-agent
 =====
 
 ## Usage
@@ -11,9 +11,9 @@ $ docker pull punnie/dd-trace-agent
 
 ```bash
 $ docker run --name dd-trace-agent -d \
-    -p 8126:8216 
-    -e DD_API_KEY=my_api_key 
-    -e DD_BIND_HOST=0.0.0.0 
+    -p 8126:8216 \
+    -e DD_API_KEY=YOUR_API_KEY \
+    -e DD_BIND_HOST=0.0.0.0 \
     punnie/dd-trace-agent:latest
 ```
 
